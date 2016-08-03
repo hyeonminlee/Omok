@@ -15,10 +15,12 @@
 #define W_SIZE 15 // 오목판 가로 사이즈
 #define H_SIZE 15 // 오목판 세로 사이즈
 
+
 char turn = 0, bwin = 0, wwin = 0;
 int chk = 0;
 int table[W_SIZE + 2][H_SIZE + 2] = { 0 };
 int cursor[2] = { W_SIZE / 2, H_SIZE / 2 };
+
 
 
 void reset_quit(void); // 키 입력 - 커서 이동, 재시작, 종료

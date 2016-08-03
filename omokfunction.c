@@ -15,10 +15,10 @@
 #define W_SIZE 15 // 오목판 가로 사이즈
 #define H_SIZE 15 // 오목판 세로 사이즈
 
-extern char turn = 0, bwin = 0, wwin = 0;
-extern int chk = 0;
-extern int table[W_SIZE + 2][H_SIZE + 2] = { 0 };
-extern int cursor[2] = { W_SIZE / 2, H_SIZE / 2 };
+extern char turn, bwin, wwin;
+extern int chk;
+extern int table[W_SIZE + 2][H_SIZE + 2];
+extern int cursor[2];
 
 
 // 오목판 그리기  
