@@ -43,8 +43,8 @@ int main(void)
 				draw_table();
 				if (wwin == 99 && bwin == 99) printf("	DRAW\n\n");
 
-				else if (turn == 1) printf("		BLACK WIN\n\n");
-				else printf("		WHITE WIN\n\n");
+				else if (turn == 1) printf("	X WIN\n\n");
+				else printf("	O WIN\n\n");
 				printf("(RESET : r )\n(EXIT  : 'ESC' KEY)\n");
 
 				reset_quit();
