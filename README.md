@@ -21,9 +21,12 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
+
   About Project(OMOK GAME).
   - It was programmed under C language.
   - It can be compiled by 'Makefile' 
   - It will be executed by './omok'
+  
+  
   Project HomePage
   - https://tmrl0419.github.io/Omok/
