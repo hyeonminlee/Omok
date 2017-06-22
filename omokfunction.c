@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "conio.h"
-#include "omokfunction.h"
+#include "omok.h"
 
 #define UP 72
 #define LEFT 75
@@ -18,14 +18,19 @@
 extern char turn, bwin, wwin;
 extern int chk;
 extern int table[W_SIZE + 2][H_SIZE + 2];
+extern int stone[W_SIZE + 2][H_SIZE + 2];
 extern int cursor[2];
 
 
 void draw_table(void)
 {
-	int bx, by, i;
+	int bx = 0;
+	int by = 0;
 
-	system("cls");
+	system("clear");
+	SetCursorPos(bx, by);
+
+
 	for (by = 1; by <= H_SIZE; by++)
 	{
 		printf(" ");
@@ -33,47 +38,15 @@ void draw_table(void)
 		{
 			if (cursor[X] == bx && cursor[Y] == by)
 			{
-				if (by != 1 && by != H_SIZE)
+				if (1 <= by  && by < H_SIZE && 1<=by && by < H_SIZE)
 				{
-					switch (table[by][bx])
+					switch (turn)
 					{
 					case 0:
-						printf("Ⅱ");
+						printf("x");
 						break;
 					case 1:
-						printf("□");
-						break;
-					case 2:
-						printf("■");
-						break;
-					}
-				}
-				
-				else if (by == H_SIZE) {
-					switch (table[by][bx])
-					{
-					case 0:
-						printf("Ⅱ");
-						break;
-					case 1:
-						printf("□");
-						break;
-					case 2:
-						printf("■");
-						break;
-					}
-				}
-				else {
-					switch (table[by][bx])
-					{
-					case 0:
-						printf("Ⅱ");
-						break;
-					case 1:
-						printf("□");
-						break;
-					case 2:
-						printf("■");
+						printf("o");
 						break;
 					}
 				}
@@ -89,10 +62,10 @@ void draw_table(void)
 						else printf("┼");
 						break;
 					case 1:
-						printf("○");
+						printf("x");
 						break;
 					case 2:
-						printf("●");
+						printf("o");
 						break;
 					}
 				}
@@ -105,14 +78,14 @@ void draw_table(void)
 						else printf("┷");
 						break;
 					case 1:
-						printf("○");
+						printf("x");
 						break;
 					case 2:
-						printf("●");
+						printf("o");
 						break;
 					}
 				}
-				else {
+				else if (by == 1){
 					switch (table[by][bx])
 					{
 					case 0:
@@ -121,10 +94,10 @@ void draw_table(void)
 						else printf("┯");
 						break;
 					case 1:
-						printf("○");
+						printf("x");
 						break;
 					case 2:
-						printf("●");
+						printf("o");
 						break;
 					}
 				}
@@ -133,7 +106,6 @@ void draw_table(void)
 		printf("\n");
 	}
 }
-//*/
 
 void winchk(void)
 {
@@ -253,21 +225,25 @@ void move_cursor(void)
 	ch = getch();
 	switch (ch)
 	{
-	case UP:
+	case '8':
 		if (cursor[Y] != 1) cursor[Y]--;
 		else cursor[Y] = H_SIZE;
+		SetCursorPos(cursor[X], cursor[Y]);
 		break;
-	case LEFT:
+	case '4':
 		if (cursor[X] != 1) cursor[X]--;
 		else cursor[X] = W_SIZE;
+		SetCursorPos(cursor[X], cursor[Y]);
 		break;
-	case RIGHT: 
+	case '6': 
 		if (cursor[X] != W_SIZE) cursor[X]++;
 		else cursor[X] = 1;
+		SetCursorPos(cursor[X], cursor[Y]);
 		break;
-	case DOWN: 	
+	case '2': 	
 		if (cursor[Y] != H_SIZE) cursor[Y]++;
 		else cursor[Y] = 1;
+		SetCursorPos(cursor[X], cursor[Y]);
 		break;
 	case ENTER:
 		if (turn == 0 && table[cursor[Y]][cursor[X]] == 0)
@@ -302,11 +278,14 @@ void move_cursor(void)
 	case 'q':
 		chk = 2;
 		break;
-	case '27':
+	case 27:
 		chk = 2;
 		break;
 	default:
 		chk = 0;
 		break;
 	}
+}
+void SetCursorPos(int XPos, int YPos){
+	printf("\033[%d;%dH",YPos,XPos+1);
 }
