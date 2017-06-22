@@ -12,8 +12,8 @@
 #define X 0
 #define Y 1
 
-#define W_SIZE 15 // ø¿∏Ò∆« ∞°∑Œ ªÁ¿Ã¡Ó
-#define H_SIZE 15 // ø¿∏Ò∆« ºº∑Œ ªÁ¿Ã¡Ó
+#define W_SIZE 15 
+#define H_SIZE 15 
 
 extern char turn, bwin, wwin;
 extern int chk;
@@ -21,7 +21,6 @@ extern int table[W_SIZE + 2][H_SIZE + 2];
 extern int cursor[2];
 
 
-// ø¿∏Ò∆« ±◊∏Æ±‚  
 void draw_table(void)
 {
 	int bx, by, i;
@@ -29,37 +28,38 @@ void draw_table(void)
 	system("cls");
 	for (by = 1; by <= H_SIZE; by++)
 	{
-		printf("°°");
+		printf(" ");
 		for (bx = 1; bx <= W_SIZE; bx++)
 		{
-			if (cursor[X] == bx && cursor[Y] == by) // ƒøº≠ «•Ω√
+			if (cursor[X] == bx && cursor[Y] == by)
 			{
 				if (by != 1 && by != H_SIZE)
 				{
 					switch (table[by][bx])
 					{
 					case 0:
-						printf("¢∆");
+						printf("‚Ö°");
 						break;
 					case 1:
-						printf("°‡");
+						printf("‚ñ°");
 						break;
 					case 2:
-						printf("°·");
+						printf("‚ñ†");
 						break;
 					}
 				}
+				
 				else if (by == H_SIZE) {
 					switch (table[by][bx])
 					{
 					case 0:
-						printf("¢∆");
+						printf("‚Ö°");
 						break;
 					case 1:
-						printf("°‡");
+						printf("‚ñ°");
 						break;
 					case 2:
-						printf("°·");
+						printf("‚ñ†");
 						break;
 					}
 				}
@@ -67,13 +67,13 @@ void draw_table(void)
 					switch (table[by][bx])
 					{
 					case 0:
-						printf("¢∆");
+						printf("‚Ö°");
 						break;
 					case 1:
-						printf("°‡");
+						printf("‚ñ°");
 						break;
 					case 2:
-						printf("°·");
+						printf("‚ñ†");
 						break;
 					}
 				}
@@ -81,18 +81,18 @@ void draw_table(void)
 			else {
 				if (by != 1 && by != H_SIZE)
 				{
-					switch (table[by][bx]) // ø¿∏ÒæÀ «•Ω√
+					switch (table[by][bx])
 					{
 					case 0:
-						if (bx == 1) printf("¶∑");
-						else if (bx == W_SIZE)  printf("¶π");
-						else printf("¶´");
+						if (bx == 1) printf("‚î†");
+						else if (bx == W_SIZE)  printf("‚î®");
+						else printf("‚îº");
 						break;
 					case 1:
-						printf("°€");
+						printf("‚óã");
 						break;
 					case 2:
-						printf("°‹");
+						printf("‚óè");
 						break;
 					}
 				}
@@ -100,15 +100,15 @@ void draw_table(void)
 					switch (table[by][bx])
 					{
 					case 0:
-						if (bx == 1) printf("¶±");
-						else if (bx == W_SIZE)  printf("¶∞");
-						else printf("¶∫");
+						if (bx == 1) printf("‚îó");
+						else if (bx == W_SIZE)  printf("‚îõ");
+						else printf("‚î∑");
 						break;
 					case 1:
-						printf("°€");
+						printf("‚óã");
 						break;
 					case 2:
-						printf("°‹");
+						printf("‚óè");
 						break;
 					}
 				}
@@ -116,15 +116,15 @@ void draw_table(void)
 					switch (table[by][bx])
 					{
 					case 0:
-						if (bx == 1) printf("¶Æ");
-						else if (bx == W_SIZE)  printf("¶Ø");
-						else printf("¶∏");
+						if (bx == 1) printf("‚îè");
+						else if (bx == W_SIZE)  printf("‚îì");
+						else printf("‚îØ");
 						break;
 					case 1:
-						printf("°€");
+						printf("‚óã");
 						break;
 					case 2:
-						printf("°‹");
+						printf("‚óè");
 						break;
 					}
 				}
@@ -143,7 +143,7 @@ void winchk(void)
 	bwin = 0;
 	wwin = 0;
 
-	for (j = 1; j < H_SIZE + 1; j++) // ø¿∏Ò∆« ≤À¬¸
+	for (j = 1; j < H_SIZE + 1; j++) 
 	{
 		for (i = 1; i < W_SIZE + 1; i++)
 		{
@@ -157,7 +157,7 @@ void winchk(void)
 		wwin = 99;
 	}
 
-	for (j = 1; j < H_SIZE + 1; j++) // §— ∏æÁ ø¿∏Ò
+	for (j = 1; j < H_SIZE + 1; j++)
 	{
 		for (i = 1; i < W_SIZE - 3; i++)
 		{
@@ -178,7 +178,7 @@ void winchk(void)
 		}
 	}
 
-	for (i = 1; i < W_SIZE + 1; i++) // §” ∏æÁ ø¿∏Ò
+	for (i = 1; i < W_SIZE + 1; i++)
 	{
 		for (j = 1; j < H_SIZE - 3; j++)
 		{
@@ -199,7 +199,7 @@ void winchk(void)
 		}
 	}
 
-	for (j = 1; j < H_SIZE - 3; j++) // °¨ ∏æÁ ø¿∏Ò
+	for (j = 1; j < H_SIZE - 3; j++)
 	{
 		for (i = 1; i < W_SIZE - 3; i++)
 		{
@@ -220,7 +220,7 @@ void winchk(void)
 		}
 	}
 
-	for (i = 1; i < W_SIZE - 3; i++) // / ∏æÁ ø¿∏Ò
+	for (i = 1; i < W_SIZE - 3; i++) 
 	{
 		for (j = 5; j < H_SIZE + 1; j++)
 		{
@@ -251,21 +251,21 @@ void move_cursor(void)
 	char ch;
 
 	ch = getch();
-	switch (ch) // »≠ªÏ«•≈∞ ¿ŒΩƒ
+	switch (ch)
 	{
-	case UP: // ªÛ
+	case UP:
 		if (cursor[Y] != 1) cursor[Y]--;
 		else cursor[Y] = H_SIZE;
 		break;
-	case LEFT: // ¡¬
+	case LEFT:
 		if (cursor[X] != 1) cursor[X]--;
 		else cursor[X] = W_SIZE;
 		break;
-	case RIGHT: // øÏ
+	case RIGHT: 
 		if (cursor[X] != W_SIZE) cursor[X]++;
 		else cursor[X] = 1;
 		break;
-	case DOWN: // «œ			
+	case DOWN: 	
 		if (cursor[Y] != H_SIZE) cursor[Y]++;
 		else cursor[Y] = 1;
 		break;
