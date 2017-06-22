@@ -45,7 +45,7 @@ int main(void)
 
 				else if (turn == 1) printf("	X WIN\n\n");
 				else printf("	O WIN\n\n");
-				printf("(RESET : r )\n(EXIT  : 'ESC' KEY)\n");
+				printf("RESET : r \nEXIT  : 'ESC' KEY\n");
 
 				reset_quit();
 				if (chk > 0) break;
@@ -58,7 +58,7 @@ int main(void)
 
 		if (turn == 0) printf("	X'S TURN\n\n");
 		else printf("	O's TURN\n\n");
-		printf("(RESET : r )\n(EXIT  : 'ESC' KEY)\n");
+		printf("RESET : r \nEXIT  : 'ESC' KEY\n");
 		//SetCursorPos(cursor[X], cursor[Y]);
 		move_cursor();
 	}
