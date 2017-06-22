@@ -56,8 +56,8 @@ int main(void)
 		if (chk == 2) break; 
 		chk = 0;
 
-		if (turn == 0) printf("	BLACK'S TURN\n\n");
-		else printf("	WHITE's TURN\n\n");
+		if (turn == 0) printf("	X'S TURN\n\n");
+		else printf("	O's TURN\n\n");
 		printf("(RESET : r )\n(EXIT  : 'ESC' KEY)\n");
 		//SetCursorPos(cursor[X], cursor[Y]);
 		move_cursor();
