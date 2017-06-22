@@ -25,4 +25,5 @@ OTHER DEALINGS IN THE SOFTWARE.
   - It was programmed under C language.
   - It can be compiled by 'Makefile' 
   - It will be executed by './omok'
-
+  Project HomePage
+  - https://tmrl0419.github.io/Omok/
