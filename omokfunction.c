@@ -20,6 +20,13 @@ extern int chk;
 extern int table[W_SIZE + 2][H_SIZE + 2];
 extern int stone[W_SIZE + 2][H_SIZE + 2];
 extern int cursor[2];
+/**
+	@file omokfunction.c
+*/
+/**
+	@brief draw the omok table
+	@return void
+*/
 
 
 void draw_table(void)
@@ -106,6 +113,10 @@ void draw_table(void)
 		printf("\n");
 	}
 }
+/**
+	@brief check victory or defeat
+	@return void
+*/
 
 void winchk(void)
 {
@@ -216,7 +227,10 @@ void winchk(void)
 		}
 	}
 }
-
+/**
+	@brief move cursor
+	@return void
+*/
 
 void move_cursor(void)
 {

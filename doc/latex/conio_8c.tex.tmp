@@ -1,0 +1,101 @@
+\hypertarget{conio_8c}{}\section{conio.\+c File Reference}
+\label{conio_8c}\index{conio.\+c@{conio.\+c}}
+{\ttfamily \#include \char`\"{}conio.\+h\char`\"{}}\\*
+Include dependency graph for conio.\+c\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{conio_8c_ab44bf9d3158f256a1002b4d655c5d920}{init\+Termios} (int echo)
+\begin{DoxyCompactList}\small\item\em Initialize new terminal i/o settings. \end{DoxyCompactList}\item 
+void \hyperlink{conio_8c_ad1adbbc98b665023f93c101f2f8b61b1}{reset\+Termios} (void)
+\begin{DoxyCompactList}\small\item\em Restore old terminal i/o settings. \end{DoxyCompactList}\item 
+char \hyperlink{conio_8c_a59b332121e913b544382bf6599ce59b0}{getch\+\_\+} (int echo)
+\begin{DoxyCompactList}\small\item\em Read 1 character -\/ echo defines echo mode. \end{DoxyCompactList}\item 
+char \hyperlink{conio_8c_a9def6cfcc88e75c6a59242a233e1dc5b}{getch} (void)
+\begin{DoxyCompactList}\small\item\em Read 1 character without echo. \end{DoxyCompactList}\item 
+char \hyperlink{conio_8c_aab484bb818fd97550b0088cdd6960d65}{getche} (void)
+\begin{DoxyCompactList}\small\item\em Read 1 character with echo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{conio.\+c@{conio.\+c}!getch@{getch}}
+\index{getch@{getch}!conio.\+c@{conio.\+c}}
+\subsubsection[{\texorpdfstring{getch(void)}{getch(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char getch (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{conio_8c_a9def6cfcc88e75c6a59242a233e1dc5b}{}\label{conio_8c_a9def6cfcc88e75c6a59242a233e1dc5b}
+
+
+Read 1 character without echo. 
+
+\begin{DoxyReturn}{Returns}
+char getch\+\_\+(0) 
+\end{DoxyReturn}
+\index{conio.\+c@{conio.\+c}!getch\+\_\+@{getch\+\_\+}}
+\index{getch\+\_\+@{getch\+\_\+}!conio.\+c@{conio.\+c}}
+\subsubsection[{\texorpdfstring{getch\+\_\+(int echo)}{getch_(int echo)}}]{\setlength{\rightskip}{0pt plus 5cm}char getch\+\_\+ (
+\begin{DoxyParamCaption}
+\item[{int}]{echo}
+\end{DoxyParamCaption}
+)}\hypertarget{conio_8c_a59b332121e913b544382bf6599ce59b0}{}\label{conio_8c_a59b332121e913b544382bf6599ce59b0}
+
+
+Read 1 character -\/ echo defines echo mode. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & echo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+char ch 
+\end{DoxyReturn}
+\index{conio.\+c@{conio.\+c}!getche@{getche}}
+\index{getche@{getche}!conio.\+c@{conio.\+c}}
+\subsubsection[{\texorpdfstring{getche(void)}{getche(void)}}]{\setlength{\rightskip}{0pt plus 5cm}char getche (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{conio_8c_aab484bb818fd97550b0088cdd6960d65}{}\label{conio_8c_aab484bb818fd97550b0088cdd6960d65}
+
+
+Read 1 character with echo. 
+
+\begin{DoxyReturn}{Returns}
+char getch\+\_\+(1) 
+\end{DoxyReturn}
+\index{conio.\+c@{conio.\+c}!init\+Termios@{init\+Termios}}
+\index{init\+Termios@{init\+Termios}!conio.\+c@{conio.\+c}}
+\subsubsection[{\texorpdfstring{init\+Termios(int echo)}{initTermios(int echo)}}]{\setlength{\rightskip}{0pt plus 5cm}void init\+Termios (
+\begin{DoxyParamCaption}
+\item[{int}]{echo}
+\end{DoxyParamCaption}
+)}\hypertarget{conio_8c_ab44bf9d3158f256a1002b4d655c5d920}{}\label{conio_8c_ab44bf9d3158f256a1002b4d655c5d920}
+
+
+Initialize new terminal i/o settings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & echo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{conio.\+c@{conio.\+c}!reset\+Termios@{reset\+Termios}}
+\index{reset\+Termios@{reset\+Termios}!conio.\+c@{conio.\+c}}
+\subsubsection[{\texorpdfstring{reset\+Termios(void)}{resetTermios(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void reset\+Termios (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{conio_8c_ad1adbbc98b665023f93c101f2f8b61b1}{}\label{conio_8c_ad1adbbc98b665023f93c101f2f8b61b1}
+
+
+Restore old terminal i/o settings. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

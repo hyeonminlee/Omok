@@ -1,0 +1,106 @@
+\hypertarget{main_8c}{}\section{main.\+c File Reference}
+\label{main_8c}\index{main.\+c@{main.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}conio.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}omok.\+h\char`\"{}}\\*
+Include dependency graph for main.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries UP}~72\hypertarget{main_8c_a1965eaca47dbf3f87acdafc2208f04eb}{}\label{main_8c_a1965eaca47dbf3f87acdafc2208f04eb}
+
+\item 
+\#define {\bfseries L\+E\+FT}~75\hypertarget{main_8c_a437ef08681e7210d6678427030446a54}{}\label{main_8c_a437ef08681e7210d6678427030446a54}
+
+\item 
+\#define {\bfseries D\+O\+WN}~80\hypertarget{main_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}{}\label{main_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}
+
+\item 
+\#define {\bfseries R\+I\+G\+HT}~77\hypertarget{main_8c_a80fb826a684cf3f0d306b22aa100ddac}{}\label{main_8c_a80fb826a684cf3f0d306b22aa100ddac}
+
+\item 
+\#define {\bfseries S\+P\+A\+CE}~32\hypertarget{main_8c_a5ff6e798033f03e74730e99f01936f84}{}\label{main_8c_a5ff6e798033f03e74730e99f01936f84}
+
+\item 
+\#define {\bfseries E\+N\+T\+ER}~13\hypertarget{main_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}{}\label{main_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}
+
+\item 
+\#define {\bfseries X}~0\hypertarget{main_8c_a207fd5507206d307cd63f95374fcd00d}{}\label{main_8c_a207fd5507206d307cd63f95374fcd00d}
+
+\item 
+\#define {\bfseries Y}~1\hypertarget{main_8c_a798e4073d613ca5ba9618e1b3253df14}{}\label{main_8c_a798e4073d613ca5ba9618e1b3253df14}
+
+\item 
+\#define {\bfseries W\+\_\+\+S\+I\+ZE}~15\hypertarget{main_8c_a307799f4ceee1c3046ff83dce880579b}{}\label{main_8c_a307799f4ceee1c3046ff83dce880579b}
+
+\item 
+\#define {\bfseries H\+\_\+\+S\+I\+ZE}~15\hypertarget{main_8c_a08e5128d6964b01007d369fc48b7bdf4}{}\label{main_8c_a08e5128d6964b01007d369fc48b7bdf4}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8c_a8ef23700f28c34195ed7cc5c5a7a1b2b}{reset\+\_\+quit} (void)
+\begin{DoxyCompactList}\small\item\em Reset,Exit button. \end{DoxyCompactList}\item 
+void \hyperlink{main_8c_aa548e876d423006fd111f7cd6873ffbd}{clear\+\_\+table} (void)
+\begin{DoxyCompactList}\small\item\em clear the table \end{DoxyCompactList}\item 
+int {\bfseries main} (void)\hypertarget{main_8c_a840291bc02cba5474a4cb46a9b9566fe}{}\label{main_8c_a840291bc02cba5474a4cb46a9b9566fe}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries turn} = 0\hypertarget{main_8c_a28c305f1bd5891514f049b6f4f55c93e}{}\label{main_8c_a28c305f1bd5891514f049b6f4f55c93e}
+
+\item 
+char {\bfseries bwin} = 0\hypertarget{main_8c_a61c2484c09758cb23978514365423040}{}\label{main_8c_a61c2484c09758cb23978514365423040}
+
+\item 
+char {\bfseries wwin} = 0\hypertarget{main_8c_a2ef0e233476cac939c236a561a422fea}{}\label{main_8c_a2ef0e233476cac939c236a561a422fea}
+
+\item 
+int {\bfseries chk} = 0\hypertarget{main_8c_a8ba43424accb5ab6c78b0f7bfd286344}{}\label{main_8c_a8ba43424accb5ab6c78b0f7bfd286344}
+
+\item 
+int {\bfseries table} \mbox{[}W\+\_\+\+S\+I\+ZE+2\mbox{]}\mbox{[}H\+\_\+\+S\+I\+ZE+2\mbox{]} = \{ 0 \}\hypertarget{main_8c_aa54a9d45da6e2eb0d6ae252713258631}{}\label{main_8c_aa54a9d45da6e2eb0d6ae252713258631}
+
+\item 
+int {\bfseries stone} \mbox{[}W\+\_\+\+S\+I\+ZE+2\mbox{]}\mbox{[}H\+\_\+\+S\+I\+ZE+2\mbox{]} = \{ 0 \}\hypertarget{main_8c_a69ae128b1c5208d07289e378c2af08dc}{}\label{main_8c_a69ae128b1c5208d07289e378c2af08dc}
+
+\item 
+int {\bfseries cursor} \mbox{[}2\mbox{]} = \{ W\+\_\+\+S\+I\+ZE / 2, H\+\_\+\+S\+I\+ZE / 2 \}\hypertarget{main_8c_a6c393df7c67b1c804c009c45d49559d0}{}\label{main_8c_a6c393df7c67b1c804c009c45d49559d0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{main.\+c@{main.\+c}!clear\+\_\+table@{clear\+\_\+table}}
+\index{clear\+\_\+table@{clear\+\_\+table}!main.\+c@{main.\+c}}
+\subsubsection[{\texorpdfstring{clear\+\_\+table(void)}{clear_table(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void clear\+\_\+table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8c_aa548e876d423006fd111f7cd6873ffbd}{}\label{main_8c_aa548e876d423006fd111f7cd6873ffbd}
+
+
+clear the table 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{main.\+c@{main.\+c}!reset\+\_\+quit@{reset\+\_\+quit}}
+\index{reset\+\_\+quit@{reset\+\_\+quit}!main.\+c@{main.\+c}}
+\subsubsection[{\texorpdfstring{reset\+\_\+quit(void)}{reset_quit(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void reset\+\_\+quit (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8c_a8ef23700f28c34195ed7cc5c5a7a1b2b}{}\label{main_8c_a8ef23700f28c34195ed7cc5c5a7a1b2b}
+
+
+Reset,Exit button. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}

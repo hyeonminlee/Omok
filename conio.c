@@ -1,8 +1,14 @@
 #include "conio.h"
 
 static struct termios old, new;
-
-/* Initialize new terminal i/o settings */
+/**
+	@file conio.c
+*/
+/**
+	@brief Initialize new terminal i/o settings
+	@param int echo
+	@return void
+ */
 void initTermios(int echo) {
     tcgetattr(0, &old); /* grab old terminal i/o settings */
     new = old; /* make new settings same as old settings */
@@ -11,12 +17,19 @@ void initTermios(int echo) {
     tcsetattr(0, TCSANOW, &new); /* use these new terminal i/o settings now */
 }
 
-/* Restore old terminal i/o settings */
+/**
+	@brief Restore old terminal i/o settings
+	@return void
+ */
 void resetTermios(void) {
     tcsetattr(0, TCSANOW, &old);
 }
 
-/* Read 1 character - echo defines echo mode */
+/**
+	@brief Read 1 character - echo defines echo mode
+	@param int echo
+	@return char ch
+ */
 char getch_(int echo) {
     char ch;
     initTermios(echo);
@@ -43,12 +56,18 @@ char getch_(int echo) {
     return ch;
 }
 
-/* Read 1 character without echo */
+/**
+	@brief Read 1 character without echo
+	@return char getch_(0)
+ */
 char getch(void) {
     return getch_(0);
 }
 
-/* Read 1 character with echo */
+/**
+	@brief Read 1 character with echo 
+	@return char getch_(1)
+*/
 char getche(void) {
     return getch_(1);
 }

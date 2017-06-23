@@ -27,6 +27,10 @@ int cursor[2] = { W_SIZE / 2, H_SIZE / 2 };
 void reset_quit(void); 
 void clear_table(void); 
 
+/**
+	@file main.c
+*/
+
 int main(void)
 {
 	while (1)
@@ -64,6 +68,10 @@ int main(void)
 	}
 	return 0;
 }
+/** 
+	@brief Reset,Exit button
+	@return void
+*/
 
 void reset_quit(void)
 {
@@ -87,7 +95,10 @@ void reset_quit(void)
 		break;
 	}
 }
-
+/**
+	@brief clear the table 
+	@return void
+*/
 void clear_table(void)
 {
 	int i, j;

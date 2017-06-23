@@ -1,5 +1,7 @@
 //omokfunction.h
-
+/**
+	@file omok.h
+*/
 #ifndef __OMOKFUNCTION_H
 #define __OMOKFUNCTION_H
 void SetCursorPos(int XPos, int YPos);

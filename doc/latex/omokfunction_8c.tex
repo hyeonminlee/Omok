@@ -1,0 +1,122 @@
+\hypertarget{omokfunction_8c}{}\section{omokfunction.\+c File Reference}
+\label{omokfunction_8c}\index{omokfunction.\+c@{omokfunction.\+c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}conio.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}omok.\+h\char`\"{}}\\*
+Include dependency graph for omokfunction.\+c\+:
+% FIG 0
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define {\bfseries UP}~72\hypertarget{omokfunction_8c_a1965eaca47dbf3f87acdafc2208f04eb}{}\label{omokfunction_8c_a1965eaca47dbf3f87acdafc2208f04eb}
+
+\item 
+\#define {\bfseries L\+E\+FT}~75\hypertarget{omokfunction_8c_a437ef08681e7210d6678427030446a54}{}\label{omokfunction_8c_a437ef08681e7210d6678427030446a54}
+
+\item 
+\#define {\bfseries D\+O\+WN}~80\hypertarget{omokfunction_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}{}\label{omokfunction_8c_a4193cd1c8c2e6ebd0e056fa2364a663f}
+
+\item 
+\#define {\bfseries R\+I\+G\+HT}~77\hypertarget{omokfunction_8c_a80fb826a684cf3f0d306b22aa100ddac}{}\label{omokfunction_8c_a80fb826a684cf3f0d306b22aa100ddac}
+
+\item 
+\#define {\bfseries S\+P\+A\+CE}~32\hypertarget{omokfunction_8c_a5ff6e798033f03e74730e99f01936f84}{}\label{omokfunction_8c_a5ff6e798033f03e74730e99f01936f84}
+
+\item 
+\#define {\bfseries E\+N\+T\+ER}~13\hypertarget{omokfunction_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}{}\label{omokfunction_8c_af4bced5cf8ed55746d4b5d34f9a0fe39}
+
+\item 
+\#define {\bfseries X}~0\hypertarget{omokfunction_8c_a207fd5507206d307cd63f95374fcd00d}{}\label{omokfunction_8c_a207fd5507206d307cd63f95374fcd00d}
+
+\item 
+\#define {\bfseries Y}~1\hypertarget{omokfunction_8c_a798e4073d613ca5ba9618e1b3253df14}{}\label{omokfunction_8c_a798e4073d613ca5ba9618e1b3253df14}
+
+\item 
+\#define {\bfseries W\+\_\+\+S\+I\+ZE}~15\hypertarget{omokfunction_8c_a307799f4ceee1c3046ff83dce880579b}{}\label{omokfunction_8c_a307799f4ceee1c3046ff83dce880579b}
+
+\item 
+\#define {\bfseries H\+\_\+\+S\+I\+ZE}~15\hypertarget{omokfunction_8c_a08e5128d6964b01007d369fc48b7bdf4}{}\label{omokfunction_8c_a08e5128d6964b01007d369fc48b7bdf4}
+
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{omokfunction_8c_a408a16aa0645db9bb887b1e3c96ba0c1}{draw\+\_\+table} (void)
+\begin{DoxyCompactList}\small\item\em draw the omok table \end{DoxyCompactList}\item 
+void \hyperlink{omokfunction_8c_ac2fc6afe7b7ce22b89d042236cc05eaa}{winchk} (void)
+\begin{DoxyCompactList}\small\item\em check victory or defeat \end{DoxyCompactList}\item 
+void \hyperlink{omokfunction_8c_ae99478128f67f0beb72e0da73255810c}{move\+\_\+cursor} (void)
+\begin{DoxyCompactList}\small\item\em move cursor \end{DoxyCompactList}\item 
+void {\bfseries Set\+Cursor\+Pos} (int X\+Pos, int Y\+Pos)\hypertarget{omokfunction_8c_a03293c964ca08c9c81d2fc728695f00a}{}\label{omokfunction_8c_a03293c964ca08c9c81d2fc728695f00a}
+
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+char {\bfseries turn}\hypertarget{omokfunction_8c_a28c305f1bd5891514f049b6f4f55c93e}{}\label{omokfunction_8c_a28c305f1bd5891514f049b6f4f55c93e}
+
+\item 
+char {\bfseries bwin}\hypertarget{omokfunction_8c_a61c2484c09758cb23978514365423040}{}\label{omokfunction_8c_a61c2484c09758cb23978514365423040}
+
+\item 
+char {\bfseries wwin}\hypertarget{omokfunction_8c_a2ef0e233476cac939c236a561a422fea}{}\label{omokfunction_8c_a2ef0e233476cac939c236a561a422fea}
+
+\item 
+int {\bfseries chk}\hypertarget{omokfunction_8c_a8ba43424accb5ab6c78b0f7bfd286344}{}\label{omokfunction_8c_a8ba43424accb5ab6c78b0f7bfd286344}
+
+\item 
+int {\bfseries table} \mbox{[}W\+\_\+\+S\+I\+ZE+2\mbox{]}\mbox{[}H\+\_\+\+S\+I\+ZE+2\mbox{]}\hypertarget{omokfunction_8c_aa54a9d45da6e2eb0d6ae252713258631}{}\label{omokfunction_8c_aa54a9d45da6e2eb0d6ae252713258631}
+
+\item 
+int {\bfseries stone} \mbox{[}W\+\_\+\+S\+I\+ZE+2\mbox{]}\mbox{[}H\+\_\+\+S\+I\+ZE+2\mbox{]}\hypertarget{omokfunction_8c_a69ae128b1c5208d07289e378c2af08dc}{}\label{omokfunction_8c_a69ae128b1c5208d07289e378c2af08dc}
+
+\item 
+int {\bfseries cursor} \mbox{[}2\mbox{]}\hypertarget{omokfunction_8c_a6c393df7c67b1c804c009c45d49559d0}{}\label{omokfunction_8c_a6c393df7c67b1c804c009c45d49559d0}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{omokfunction.\+c@{omokfunction.\+c}!draw\+\_\+table@{draw\+\_\+table}}
+\index{draw\+\_\+table@{draw\+\_\+table}!omokfunction.\+c@{omokfunction.\+c}}
+\subsubsection[{\texorpdfstring{draw\+\_\+table(void)}{draw_table(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void draw\+\_\+table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{omokfunction_8c_a408a16aa0645db9bb887b1e3c96ba0c1}{}\label{omokfunction_8c_a408a16aa0645db9bb887b1e3c96ba0c1}
+
+
+draw the omok table 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{omokfunction.\+c@{omokfunction.\+c}!move\+\_\+cursor@{move\+\_\+cursor}}
+\index{move\+\_\+cursor@{move\+\_\+cursor}!omokfunction.\+c@{omokfunction.\+c}}
+\subsubsection[{\texorpdfstring{move\+\_\+cursor(void)}{move_cursor(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void move\+\_\+cursor (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{omokfunction_8c_ae99478128f67f0beb72e0da73255810c}{}\label{omokfunction_8c_ae99478128f67f0beb72e0da73255810c}
+
+
+move cursor 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\index{omokfunction.\+c@{omokfunction.\+c}!winchk@{winchk}}
+\index{winchk@{winchk}!omokfunction.\+c@{omokfunction.\+c}}
+\subsubsection[{\texorpdfstring{winchk(void)}{winchk(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void winchk (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{omokfunction_8c_ac2fc6afe7b7ce22b89d042236cc05eaa}{}\label{omokfunction_8c_ac2fc6afe7b7ce22b89d042236cc05eaa}
+
+
+check victory or defeat 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
